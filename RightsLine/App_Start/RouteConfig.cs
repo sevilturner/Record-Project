@@ -14,10 +14,10 @@ namespace RightsLine
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-            name: "Home",
-            url: "",
-            defaults: new { controller = "User", action = "Index", id = UrlParameter.Optional }
-        );
+                name: "Home",
+                url: "",
+                defaults: new { controller = "User", action = "Index", id = UrlParameter.Optional }
+                );
 
             routes.MapRoute(
                 name: "Default",

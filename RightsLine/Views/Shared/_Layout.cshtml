@@ -37,19 +37,10 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/jqueryval")
-   @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jqueryui")
     <script>
-        $(function () {
-            $(".jquery-marker-datepicker").datepicker({
-                dateFormat: "MM/dd/yy",
-                changeYear: true,
-                showOn: "button"
-            }).css("display", "inline-block")
-            .next("button".button)({
-                icons: { primary: "ui-icon-calendar" },
-                label: "Select date",
-                text: false
-            });
+        $(document).ready(function () {
+            $('.date').datepicker({ dateFormat: "dd/mm/yy" });
         });
     </script>
     @RenderSection("scripts", required: false)

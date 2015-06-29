@@ -36,7 +36,6 @@ namespace RightsLine.Models
         [DisplayName("Birth Date")]
         [Required(ErrorMessage = "The Birth Date field is required.")]
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? BirthDate { get; set; }
 
         [Required]
